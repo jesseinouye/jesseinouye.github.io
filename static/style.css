@@ -1,0 +1,112 @@
+html * {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    background-color: #ebe4df;
+    /* background-color: #e8e3df; */
+}
+
+.lexend-font {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+}
+
+header {
+	text-align: left ;
+    /* font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+body {
+    margin: auto;
+    width: 760px;
+    max-width: calc(100% - 40px);
+    padding: 0 20px;
+    /* font-family: "Lexend", sans-serif; */
+    /* font-optical-sizing: auto; */
+    /* font-weight: 400; */
+    /* font-style: normal; */
+}
+
+a {
+    text-decoration: underline;
+    color: #244463;
+}
+
+a:visited {
+    color: #244463;
+}
+
+.navbar {
+    /* background-color: #333; */
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Flexbox container that spans the full width of the page */
+.container-fluid {
+    display: flex;
+    justify-content: space-between; /* Title on the left, nav on the right */
+    align-items: center; /* Vertically center the items */
+    width: 100%; /* Full width */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-brand:visited {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Align the nav items to the far right */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item .nav-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    opacity: 0.7;
+    transition: opacity 0.1s ease;
+}
+
+.nav-item .nav-link:hover {
+    opacity: 1;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #244463;
+}
+
+.list-item:visited {
+    color: #244463
+}
+
+#tags {
+    font-style: italic;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+}

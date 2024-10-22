@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		
+		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/png">
+	</head>
+
+	<body>
+		{{ partial "header.html" . }}
+		<!-- Code that all your templates share, like a header -->
+		{{ block "main" . }}
+		<!-- The part of the page that begins to differ between templates -->
+		{{ end }}
+		{{ block "footer" . }}
+		<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+		{{ end }}
+	</body>
+</html>
+
