@@ -8,5 +8,5 @@ title: 'Jesse Inouye'
 
 I'm a software engineer by trade and serial hobbyist by compulsion, interested in the intersection of ML/AI and the physical world. Still figuring out what this site should contain, so please bear with me.
 
-In the meantime, here's my {{< newtablink "https://drive.google.com/file/d/1EykIYguPbwcBXp-Cwva96rsb_sQ95sVy/view?usp=sharing" >}}resume{{< /newtablink >}}.
+In the meantime, here's my {{< newtablink "https://drive.google.com/file/d/1nzSkG3WhRjDnqbNN3eHZUIlz8M6wjl4Z/view?usp=sharing" >}}resume{{< /newtablink >}}.
 
