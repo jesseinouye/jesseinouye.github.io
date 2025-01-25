@@ -5,4 +5,4 @@ title: 'Blog'
 menu: 'nav'
 ---
 
-Some writing.
+Ramblings and other thoughts.

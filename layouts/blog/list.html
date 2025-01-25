@@ -11,7 +11,7 @@
     <!-- Ranges through content/posts/*.md -->
     {{ range .Pages }}
         <li>
-            <a class="list-item" href="{{.Permalink}}">{{.Title}}</a>
+            {{.Date.Format "2006-01-02"}} -- <a class="list-item" href="{{.Permalink}}">{{.Title}}</a>
         </li>
     {{ end }}
     </ul>

@@ -10,13 +10,6 @@
     </section>
     <aside id="meta">
         <div>
-            {{/*  {{ with .Params.topics }}
-            <ul id="topics">
-                {{ range . }}
-                <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
-                {{ end }}
-            </ul>
-            {{ end }}  */}}
             <hr>
             <div id="tags">
             Tags:
@@ -27,13 +20,23 @@
             {{ end }}
             </div>
         </div>
-        <div>
-            {{ with .PrevInSection }}
-            <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-            {{ end }}
-            {{ with .NextInSection }}
-            <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-            {{ end }}
+        <div class="blog-nav">
+            <div class="previous">
+                Prev: 
+                {{ with .PrevInSection }}
+                    <a class="previous-link" href="{{.Permalink}}"> {{.Title}}</a>
+                {{ else }}
+                    None
+                {{ end }}
+            </div>
+            <div class="next">
+                Next: 
+                {{ with .NextInSection }}
+                    <a class="next-link" href="{{.Permalink}}"> {{.Title}}</a>
+                {{ else }}
+                    None
+                {{ end }}
+            </div>
         </div>
     </aside>
 {{ end }}

@@ -1,9 +1,10 @@
 html * {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    /* font-weight: 400; */
+    /* font-weight: 360; */
     /* font-style: normal; */
-    background-color: #ebe4df;
+    /* background-color: #ebe4df; */
+    background-color: #f7f6ec;
     /* background-color: #e8e3df; */
 }
 
@@ -60,6 +61,7 @@ body {
     width: 760px;
     max-width: calc(100% - 40px);
     padding: 0 20px;
+    font-weight: 360;
     /* font-family: "Lexend", sans-serif; */
     /* font-optical-sizing: auto; */
     /* font-weight: 400; */
@@ -68,11 +70,11 @@ body {
 
 a {
     text-decoration: underline;
-    color: #244463;
+    color: #3d6ba2;
 }
 
 a:visited {
-    color: #244463;
+    color: #3d6ba2;
 }
 
 .navbar {
@@ -125,11 +127,22 @@ a:visited {
 
 .list-item {
     text-decoration: none;
-    color: #244463;
+    color: #3d6ba2;
 }
 
 .list-item:visited {
-    color: #244463
+    color: #3d6ba2
+}
+
+.blog-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+#meta {
+    margin-top: 50px;
 }
 
 #tags {
@@ -137,10 +150,12 @@ a:visited {
 }
 
 h1 {
+    font-size: 1.7rem;
     font-weight: 400;
 }
 
 h2 {
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
